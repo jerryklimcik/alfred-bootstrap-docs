@@ -1,0 +1,16 @@
+{
+    "name": "jerryklimcik/alfred-bootstrap-docs",
+    "description": "Bootstrap 5 docs search workflow for Alfred.",
+    "version": "0.1.0",
+    "keywords": ["alfred", "alfred-workflow", "bootstrap", "algolia"],
+    "homepage": "http://klimcik.cz",
+    "support": {
+        "source": "https://github.com/jerryklimcik/alfred-bootstrap-docs",
+        "issues": "https://github.com/jerryklimcik/alfred-bootstrap-docs/issues"
+    },
+    "license": "MIT",
+    "require": {
+        "joetannenbaum/alfred-workflow": "^0.1.0",
+        "algolia/algoliasearch-client-php": "^2.7"
+    }
+}
