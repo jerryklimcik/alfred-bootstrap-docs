@@ -15,7 +15,7 @@
 Just type `bs` followed by your search query.
 
 ```
-ld <query>
+bs <query>
 ```
 
 Either press `⌘Y` to Quick Look the result, or press `<enter>` to open it in your web browser.
