@@ -6,7 +6,7 @@
 
 ## Installation
 
-1. [Download the latest version](https://github.com/jerryklimcik/alfred-bootstrap-docs/releases/download/0.1.0/Alfred.Bootstrap.Docs.alfredworkflow)
+1. [Download the latest version](https://github.com/jerryklimcik/alfred-bootstrap-docs/releases/download/0.1.1/Bootstrap.Docs.alfredworkflow)
 2. Install the workflow by double-clicking the `.alfredworkflow` file
 3. You can add the workflow to a category, then click "Import" to finish importing. You'll now see the workflow listed in the left sidebar of your Workflows preferences pane.
 
