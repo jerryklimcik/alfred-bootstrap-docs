@@ -60,7 +60,13 @@
 				<key>runningsubtext</key>
 				<string>Searching docs for "{query}"...</string>
 				<key>script</key>
-				<string>php bootstrap.php "{query}"</string>
+				<string>if [ -f "/opt/homebrew/bin/php" ]; then
+    /opt/homebrew/bin/php bootstrap.php "{query}"
+elif [ -f "/usr/local/bin/php" ]; then
+    /usr/local/bin/php bootstrap.php "{query}"
+elif [ -f "/usr/bin/php" ]; then
+    /usr/bin/php bootstrap.php "{query}"
+fi</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -102,7 +108,7 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>Bootstrap 5 docs search workflow for Alfred.</string>
 	<key>uidata</key>
 	<dict>
 		<key>BC883AFC-982C-41EA-95C4-A0C3BBD5CFDE</key>
@@ -120,7 +126,11 @@
 			<integer>180</integer>
 		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>0.1.1</string>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/jerryklimcik/alfred-bootstrap-docs</string>
 </dict>
 </plist>
