@@ -8,15 +8,21 @@ use Algolia\AlgoliaSearch\Support\UserAgent;
 require __DIR__ . '/vendor/autoload.php';
 
 $query = $argv[1];
-
+$version = getenv('version') ?: '5.2';
 $workflow = new Workflow;
-$algolia = SearchClient::create('BH4D9OD16A', '5990ad008512000bba2cf951ccf0332f');
+
+// previous versions are using different app ID
+if ($version === '5.0' || $version === '5.1') {
+    $algolia = SearchClient::create('BH4D9OD16A', '5990ad008512000bba2cf951ccf0332f');
+} else {
+    $algolia = SearchClient::create('AK7KMZKZHQ', '3151f502c7b9e9dafd5e6372b691a24e');
+}
 
 UserAgent::addCustomUserAgent('Alfred Workflow', '0.3.0');
 
 $index = $algolia->initIndex('bootstrap');
 $search = $index->search($query, ['facetFilters' => [
-    sprintf('version:%s', '5.1'),
+    sprintf('version:%s', $version),
 ]]);
 
 $results = $search['hits'];

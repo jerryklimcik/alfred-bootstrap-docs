@@ -20,6 +20,14 @@ bs <query>
 
 Either press `⌘Y` to Quick Look the result, or press `<enter>` to open it in your web browser.
 
+## Changing Branches
+
+By default this workflow searches the `5.2` version of the docs. However, you can change that to any branch listed on [laravel.com/docs](https://laravel.com/docs).
+
+1. Go to the _Laravel Docs_ workflow in your Alfred preferences
+2. Click the `[𝝌]` icon
+3. Set the value of `branch` variable to your desired version (e.g. `9.x`)
+
 ### Note
 
 Heavily inspired by [Alfred-laravel-docs by Till Krüss](https://github.com/tillkruss/alfred-laravel-docs) and big kudos to him.
